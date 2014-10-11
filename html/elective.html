@@ -5,7 +5,7 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>jemdoc &ndash; html changes</title>
+<title>PhD Forum, CSE Department, IIT Madras &ndash; Elective Papers</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -17,10 +17,10 @@
 <div class="menu-item"><a href="dcc.html">DCC</a></div>
 <div class="menu-category">General <br /> Information</div>
 <div class="menu-item"><a href="travel.html">Travel</a></div>
-<div class="menu-item"><a href="compre.html">Comprehensive</a></div>
 <div class="menu-item"><a href="misc.html">Misc&nbsp;info</a></div>
 <div class="menu-item"><a href="faq.html">FAQ</a></div>
 <div class="menu-category">Compre Papers</div>
+<div class="menu-item"><a href="compre.html">The&nbsp;Exam</a></div>
 <div class="menu-item"><a href="adsa.html">ADSA</a></div>
 <div class="menu-item"><a href="mccs.html">MCCS</a></div>
 <div class="menu-item"><a href="co.html">CO</a></div>
@@ -32,55 +32,20 @@
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>jemdoc &ndash; html changes</h1>
+<h1>PhD Forum, CSE Department, IIT Madras &ndash; Elective Papers</h1>
+<div id="subtitle"><a href="http://www.cse.iitm.ac.in/~phdforum/">PhD Forum</a></div>
 </div>
-<p>jemdoc has a built-in default configuration. This configuration includes the
-particular html tags used when producing html. If you wish to adjust the html
-that jemdoc produces, you can provide a configuration file to override the
-built-in defaults.</p>
-<h2>Example html change</h2>
-<p>Suppose you wanted to add <a href="http://www.google.com/analytics/">Google
-Analytics</a> tracking to your website. That requires adding a short section of
-html before the <tt>&lt;/body&gt;</tt> tag.</p>
-<p>First, find out which block needs to be changed by using</p>
-<div class="codeblock">
-<div class="blockcontent"><pre>
-jemdoc --show-config
-</pre></div></div>
-<p>This prints the default html configuration. From this, the relevant
-configuration block (the one which includes the <tt>&lt;/body&gt;</tt> tag) has a title
-<tt>[bodyend]</tt>, and looks like</p>
-<div class="codeblock">
-<div class="blockcontent"><pre>
-[bodyend]
-&lt;/body&gt;
-&lt;/html&gt;
-</pre></div></div>
-<p>Create a new file <tt>mysite.conf</tt>, say, and put a new <tt>[bodyend]</tt> block
-inside it. The new file looks like this:</p>
-<div class="codeblock">
-<div class="blockcontent"><pre>
-[bodyend]
-&lt;script src="http://www.google-analytics.com/urchin.js" type="text/javascript"&gt;
-&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
-_uacct = "UA-0000000-0";
-urchinTracker();
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre></div></div>
-<p>Include your new configuration file, with the <tt>-c</tt> option (<a href="using.html">more
-details here</a>):</p>
-<div class="codeblock">
-<div class="blockcontent"><pre>
-jemdoc -c mysite.conf index.jemdoc
-</pre></div></div>
-<p>This will pull in the new <tt>[bodyend]</tt> block from <tt>mysite.conf</tt>, but otherwise
-work as before.</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>Mention which all elective papers are available.</p>
+</div></div>
+<table id="Papers">
+<tr class="r1"><td class="c1">Year  </td><td class="c2"> January </td><td class="c3"> August </td></tr>
+<tr class="r2"><td class="c1">2008 </td><td class="c2"> jpeg pdf </td><td class="c3"> jpeg pdf </td><td class="c4">
+</td></tr></table>
 <div id="footer">
 <div id="footer-text">
-Page generated 2014-10-11 10:44:32 IST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2014-10-11 22:11:20 IST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>
