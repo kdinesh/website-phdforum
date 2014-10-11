@@ -9,7 +9,7 @@ docs : $(PHDOCS)
 .PHONY : update
 update : $(PHDOCS)
 	@echo -n 'Copying to server...'
-	# insert code for copying to server here.
+	scp -r html/ phdforum@cse.iitm.ac.in:~/public_html/
 	@echo ' done.'
 
 html/%.html : %.jemdoc MENU
