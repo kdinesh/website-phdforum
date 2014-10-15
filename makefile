@@ -1,4 +1,4 @@
-DOCS=index talks dcc travel faq misc compre adsa mccs co elective other feed contact
+DOCS=index talks dcc travel faq misc compre adsa mccs co other feed contact
 
 HDOCS=$(addsuffix .html, $(DOCS))
 PHDOCS=$(addprefix html/, $(HDOCS))
